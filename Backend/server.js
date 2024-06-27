@@ -10,33 +10,56 @@ app.use(express.json());
 
 // get 
 
-app.get('/' , (req , res)=>{
-     res.send("hello this is my new end point");
+app.get('/', (req, res) => {
+    res.send("hello this is my new end point");
 })
+// this is the sign up endpoint
 
+app.post('/signup', async (req, res) => {
+    const { name, email, password } = req.body;
+    const id = await user.findOne({ email })
+    if (id) {
+        return res.send("user alredy exist")
 
-app.post('/signup'  , async(req , res)=>{
-    const {name , email , password} = req.body;
-const id = await user.findOne({email})
-if(id){
-    return res.send("user alredy exist")
-    // console.log(id)
-}
-else {
-    const data = {
-        name : name,
-        email:email,
-        password : password 
+    }
+    else {
+        const data = {
+            name: name,
+            email: email,
+            password: password
+        }
+
+        user.insertMany(data);
+        return res.send("data is successfully stored");
     }
 
-    user.insertMany(data);
-    return res.send("data is successfully stored");
-}
-    
 
 })
 
+// this is the login endpoint
 
-app.listen(port ,() => {
+
+app.post('/login', async (req, res) => {
+    const { email, password } = req.body;
+    const id = await user.findOne({ email });
+    if (id) {
+        // password check
+        const check = id.password;
+        const name = id.name;
+        if (check == password) {
+            return res.send(name)
+        }
+        else {
+            return res.send("please check credentials")
+        }
+
+    }
+    else {
+        return res.send("sign up first")
+    }
+})
+
+
+app.listen(port, () => {
     console.log(`your server listen of port no.${port}`);
 })
