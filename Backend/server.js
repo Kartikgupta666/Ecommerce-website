@@ -2,34 +2,37 @@ const express = require('express')
 const connectToDatabase = require('./db')
 const app = express();
 const port = 9000;
-const user = require('./User_schema')
+const User = require('./Schema/User_schema')
+
+const bcrypt = require('bcryptjs')
+
 connectToDatabase();
 
 app.use(express.json());
 // get , post , put , patch
 
-// get 
 
-app.get('/', (req, res) => {
-    res.send("hello this is my new end point");
-})
-// this is the sign up endpoint
+// this is the sign up endpoint associate with User schema
 
 app.post('/signup', async (req, res) => {
     const { name, email, password } = req.body;
-    const id = await user.findOne({ email })
+    const id = await User.findOne({ email })
     if (id) {
-        return res.send("user alredy exist")
+        return res.send("User alredy exist")
 
     }
     else {
-        const data = {
+
+        const salt = await bcrypt.genSaltSync(10);
+        const hashpass = await bcrypt.hashSync(password, salt);
+
+        const data = new User({
             name: name,
             email: email,
-            password: password
-        }
+            password: hashpass
+        })
 
-        user.insertMany(data);
+        await data.save();
         return res.send("data is successfully stored");
     }
 
@@ -41,13 +44,13 @@ app.post('/signup', async (req, res) => {
 
 app.post('/login', async (req, res) => {
     const { email, password } = req.body;
-    const id = await user.findOne({ email });
-    if (id) {
+    const user = await User.findOne({ email });
+    if (user) {
         // password check
-        const check = id.password;
-        const name = id.name;
-        if (check == password) {
-            return res.send(name)
+        const check = await bcrypt.compare(password, user.password)
+
+        if (check) {
+            return res.send("logged in")
         }
         else {
             return res.send("please check credentials")
@@ -58,6 +61,13 @@ app.post('/login', async (req, res) => {
         return res.send("sign up first")
     }
 })
+
+
+
+
+
+
+
 
 
 app.listen(port, () => {
