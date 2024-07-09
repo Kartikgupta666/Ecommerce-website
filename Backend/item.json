@@ -1,142 +1,142 @@
 [
     {
-        "Title": "Wireless Mouse",
-        "Price": "19.99",
-        "Image Link": "http://example.com/images/wireless-mouse.jpg",
-        "Category": "Electronics",
-        "Description": "A high-precision wireless mouse with ergonomic design."
+        "title": "Wireless Mouse",
+        "price": "19.99",
+        "image": "http://example.com/images/wireless-mouse.jpg",
+        "category": "Electronics",
+        "description": "A high-precision wireless mouse with ergonomic design."
     },
     {
-        "Title": "Bluetooth Headphones",
-        "Price": "49.99",
-        "Image Link": "http://example.com/images/bluetooth-headphones.jpg",
-        "Category": "Electronics",
-        "Description": "Comfortable over-ear headphones with superior sound quality and long battery life."
+        "title": "Bluetooth Headphones",
+        "price": "49.99",
+        "image": "http://example.com/images/bluetooth-headphones.jpg",
+        "category": "Electronics",
+        "description": "Comfortable over-ear headphones with superior sound quality and long battery life."
     },
     {
-        "Title": "Yoga Mat",
-        "Price": "25.00",
-        "Image Link": "http://example.com/images/yoga-mat.jpg",
-        "Category": "Sports & Outdoors",
-        "Description": "Non-slip yoga mat with extra cushioning for comfort."
+        "title": "Yoga Mat",
+        "price": "25.00",
+        "image": "http://example.com/images/yoga-mat.jpg",
+        "category": "Sports & Outdoors",
+        "description": "Non-slip yoga mat with extra cushioning for comfort."
     },
     {
-        "Title": "Stainless Steel Water Bottle",
-        "Price": "15.50",
-        "Image Link": "http://example.com/images/water-bottle.jpg",
-        "Category": "Home & Kitchen",
-        "Description": "Insulated water bottle to keep your drinks cold or hot for hours."
+        "title": "Stainless Steel Water Bottle",
+        "price": "15.50",
+        "image": "http://example.com/images/water-bottle.jpg",
+        "category": "Home & Kitchen",
+        "description": "Insulated water bottle to keep your drinks cold or hot for hours."
     },
     {
-        "Title": "Running Shoes",
-        "Price": "75.00",
-        "Image Link": "http://example.com/images/running-shoes.jpg",
-        "Category": "Sports & Outdoors",
-        "Description": "Lightweight running shoes with excellent support and grip."
+        "title": "Running Shoes",
+        "price": "75.00",
+        "image": "http://example.com/images/running-shoes.jpg",
+        "category": "Sports & Outdoors",
+        "description": "Lightweight running shoes with excellent support and grip."
     },
     {
-        "Title": "Electric Kettle",
-        "Price": "35.99",
-        "Image Link": "http://example.com/images/electric-kettle.jpg",
-        "Category": "Home & Kitchen",
-        "Description": "Fast-boiling electric kettle with automatic shut-off feature."
+        "title": "Electric Kettle",
+        "price": "35.99",
+        "image": "http://example.com/images/electric-kettle.jpg",
+        "category": "Home & Kitchen",
+        "description": "Fast-boiling electric kettle with automatic shut-off feature."
     },
     {
-        "Title": "Desk Lamp",
-        "Price": "22.99",
-        "Image Link": "http://example.com/images/desk-lamp.jpg",
-        "Category": "Home & Office",
-        "Description": "Adjustable LED desk lamp with multiple brightness settings."
+        "title": "Desk Lamp",
+        "price": "22.99",
+        "image": "http://example.com/images/desk-lamp.jpg",
+        "category": "Home & Office",
+        "description": "Adjustable LED desk lamp with multiple brightness settings."
     },
     {
-        "Title": "Smartphone",
-        "Price": "299.99",
-        "Image Link": "http://example.com/images/smartphone.jpg",
-        "Category": "Electronics",
-        "Description": "Latest model smartphone with high-resolution camera and fast processor."
+        "title": "Smartphone",
+        "price": "299.99",
+        "image": "http://example.com/images/smartphone.jpg",
+        "category": "Electronics",
+        "description": "Latest model smartphone with high-resolution camera and fast processor."
     },
     {
-        "Title": "Leather Wallet",
-        "Price": "45.00",
-        "Image Link": "http://example.com/images/leather-wallet.jpg",
-        "Category": "Accessories",
-        "Description": "Genuine leather wallet with multiple card slots and a coin pocket."
+        "title": "Leather Wallet",
+        "price": "45.00",
+        "image": "http://example.com/images/leather-wallet.jpg",
+        "category": "Accessories",
+        "description": "Genuine leather wallet with multiple card slots and a coin pocket."
     },
     {
-        "Title": "Cookware Set",
-        "Price": "89.99",
-        "Image Link": "http://example.com/images/cookware-set.jpg",
-        "Category": "Home & Kitchen",
-        "Description": "Non-stick cookware set including pots, pans, and utensils."
+        "title": "Cookware Set",
+        "price": "89.99",
+        "image": "http://example.com/images/cookware-set.jpg",
+        "category": "Home & Kitchen",
+        "description": "Non-stick cookware set including pots, pans, and utensils."
     },
     {
-        "Title": "Backpack",
-        "Price": "59.99",
-        "Image Link": "http://example.com/images/backpack.jpg",
-        "Category": "Accessories",
-        "Description": "Durable and spacious backpack suitable for travel and daily use."
+        "title": "Backpack",
+        "price": "59.99",
+        "image": "http://example.com/images/backpack.jpg",
+        "category": "Accessories",
+        "description": "Durable and spacious backpack suitable for travel and daily use."
     },
     {
-        "Title": "Fitness Tracker",
-        "Price": "99.99",
-        "Image Link": "http://example.com/images/fitness-tracker.jpg",
-        "Category": "Electronics",
-        "Description": "Waterproof fitness tracker with heart rate monitor and GPS."
+        "title": "Fitness Tracker",
+        "price": "99.99",
+        "image": "http://example.com/images/fitness-tracker.jpg",
+        "category": "Electronics",
+        "description": "Waterproof fitness tracker with heart rate monitor and GPS."
     },
     {
-        "Title": "Coffee Maker",
-        "Price": "79.99",
-        "Image Link": "http://example.com/images/coffee-maker.jpg",
-        "Category": "Home & Kitchen",
-        "Description": "Programmable coffee maker with built-in grinder for fresh coffee."
+        "title": "Coffee Maker",
+        "price": "79.99",
+        "image": "http://example.com/images/coffee-maker.jpg",
+        "category": "Home & Kitchen",
+        "description": "Programmable coffee maker with built-in grinder for fresh coffee."
     },
     {
-        "Title": "Sunglasses",
-        "Price": "29.99",
-        "Image Link": "http://example.com/images/sunglasses.jpg",
-        "Category": "Accessories",
-        "Description": "Polarized sunglasses with UV protection."
+        "title": "Sunglasses",
+        "price": "29.99",
+        "image": "http://example.com/images/sunglasses.jpg",
+        "category": "Accessories",
+        "description": "Polarized sunglasses with UV protection."
     },
     {
-        "Title": "Electric Toothbrush",
-        "Price": "39.99",
-        "Image Link": "http://example.com/images/electric-toothbrush.jpg",
-        "Category": "Health & Personal Care",
-        "Description": "Rechargeable electric toothbrush with multiple cleaning modes."
+        "title": "Electric Toothbrush",
+        "price": "39.99",
+        "image": "http://example.com/images/electric-toothbrush.jpg",
+        "category": "Health & Personal Care",
+        "description": "Rechargeable electric toothbrush with multiple cleaning modes."
     },
     {
-        "Title": "Gaming Chair",
-        "Price": "150.00",
-        "Image Link": "http://example.com/images/gaming-chair.jpg",
-        "Category": "Furniture",
-        "Description": "Ergonomic gaming chair with adjustable height and lumbar support."
+        "title": "Gaming Chair",
+        "price": "150.00",
+        "image": "http://example.com/images/gaming-chair.jpg",
+        "category": "Furniture",
+        "description": "Ergonomic gaming chair with adjustable height and lumbar support."
     },
     {
-        "Title": "Portable Speaker",
-        "Price": "59.99",
-        "Image Link": "http://example.com/images/portable-speaker.jpg",
-        "Category": "Electronics",
-        "Description": "Bluetooth portable speaker with deep bass and long battery life."
+        "title": "Portable Speaker",
+        "price": "59.99",
+        "image": "http://example.com/images/portable-speaker.jpg",
+        "category": "Electronics",
+        "description": "Bluetooth portable speaker with deep bass and long battery life."
     },
     {
-        "Title": "Cookbook",
-        "Price": "19.99",
-        "Image Link": "http://example.com/images/cookbook.jpg",
-        "Category": "Books",
-        "Description": "A collection of easy-to-follow recipes for delicious meals."
+        "title": "Cookbook",
+        "price": "19.99",
+        "image": "http://example.com/images/cookbook.jpg",
+        "category": "Books",
+        "description": "A collection of easy-to-follow recipes for delicious meals."
     },
     {
-        "Title": "Handbag",
-        "Price": "75.00",
-        "Image Link": "http://example.com/images/handbag.jpg",
-        "Category": "Accessories",
-        "Description": "Stylish handbag with ample storage space and elegant design."
+        "title": "Handbag",
+        "price": "75.00",
+        "image": "http://example.com/images/handbag.jpg",
+        "category": "Accessories",
+        "description": "Stylish handbag with ample storage space and elegant design."
     },
     {
-        "Title": "Digital Camera",
-        "Price": "249.99",
-        "Image Link": "http://example.com/images/digital-camera.jpg",
-        "Category": "Electronics",
-        "Description": "High-resolution digital camera with multiple shooting modes."
+        "title": "Digital Camera",
+        "price": "249.99",
+        "image": "http://example.com/images/digital-camera.jpg",
+        "category": "Electronics",
+        "description": "High-resolution digital camera with multiple shooting modes."
     }
 ]

@@ -3,6 +3,7 @@ const connectToDatabase = require('./db')
 const app = express();
 const port = 9000;
 const User = require('./Schema/User_schema')
+const Item = require('./Schema/Item_Schema')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
 const fetchuser = require('./middleware/fetchuser')
@@ -81,7 +82,13 @@ app.post("/getUserDetails", fetchuser, async (req, res) => {
     }
 })
 
+// this is the comment for the item schema below this comment all the routes associate with item schema
 
+app.get('/getItem' ,async(req,res)=>{
+const item = await Item.find({});
+return res.json(item)
+
+})
 
 
 
