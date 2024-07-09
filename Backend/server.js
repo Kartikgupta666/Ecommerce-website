@@ -3,9 +3,10 @@ const connectToDatabase = require('./db')
 const app = express();
 const port = 9000;
 const User = require('./Schema/User_schema')
-
+const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
-
+const fetchuser = require('./middleware/fetchuser')
+const JWT_SECRET = "Ecom_web"
 connectToDatabase();
 
 app.use(express.json());
@@ -33,6 +34,10 @@ app.post('/signup', async (req, res) => {
         })
 
         await data.save();
+        const ID = data.id;
+        console.log(ID)
+        const token = jwt.sign(ID, JWT_SECRET)
+        console.log(token)
         return res.send("data is successfully stored");
     }
 
@@ -50,6 +55,9 @@ app.post('/login', async (req, res) => {
         const check = await bcrypt.compare(password, user.password)
 
         if (check) {
+            const id = user.id;
+            const token = jwt.sign(id, JWT_SECRET)
+            console.log(token)
             return res.send("logged in")
         }
         else {
@@ -62,9 +70,16 @@ app.post('/login', async (req, res) => {
     }
 })
 
-
-
-
+app.post("/getUserDetails", fetchuser, async (req, res) => {
+    try {
+        const id = req.user;
+        const user = await User.findById(id).select("-password")
+        return res.json(user)
+    }
+    catch (e) {
+        console.log(e)
+    }
+})
 
 
 
