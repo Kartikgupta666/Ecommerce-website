@@ -19,6 +19,8 @@ const Item_Schema = new Schema({
         type: String,
         require: true
     },
+    searchQuery: [String]
+    ,
     category: {
         type: String,
         require: true

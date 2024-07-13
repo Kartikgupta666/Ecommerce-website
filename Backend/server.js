@@ -84,13 +84,32 @@ app.post("/getUserDetails", fetchuser, async (req, res) => {
 
 // this is the comment for the item schema below this comment all the routes associate with item schema
 
-app.get('/getItem' ,async(req,res)=>{
-const item = await Item.find({});
-return res.json(item)
+app.get('/getItem', async (req, res) => {
+    const item = await Item.find({});
+    return res.json(item)
 
 })
 
+// this route is for search an specific item
 
+app.get("/Item/query", async (req, res) => {
+    const { query } = req.body;
+
+    try {
+        const item = await Item.find({ searchQuery: { $in: query } }).select("-searchQuery");
+        if (item) {
+            return res.json(item);
+        }
+        else {
+            return res.json({ message: "NOT FOUND" });
+        }
+    }
+    catch (e) {
+        console.log(e)
+    }
+
+
+})
 
 app.listen(port, () => {
     console.log(`your server listen of port no.${port}`);
